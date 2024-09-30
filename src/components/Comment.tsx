@@ -1,14 +1,8 @@
 "use client";
 import Reply from "./Reply";
 import { ReplyProps } from "@/libs/types";
+import { CommentComponent } from "@/libs/types";
 
-interface CommentComponent {
-  ImagePath: string;
-  username: string;
-  commentTitle: string;
-  likes: number;
-  replies: ReplyProps[];
-}
 export default function Comment({
   ImagePath,
   username,
