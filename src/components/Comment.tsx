@@ -33,8 +33,9 @@ export default function Comment({
           </div>
         </div>
       </div>
+
       {/* You can use map-loop to render Reply component here */}
-      {replies.map((rep: any) => (
+      {replies.map((rep: ReplyProps|any) => (
         <Reply
           key={rep.username}
           ImagePath={rep.userImagePath}

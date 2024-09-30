@@ -1,7 +1,7 @@
 "use client";
-import { ReplyProps } from "../libs/types";
+import { ReplyProps } from "@/libs/types";
 
-export default function Reply({ ImagePath, username, replyTitle, likeNum }:any) {
+export default function Reply({ ImagePath, username, replyTitle, replylike }:ReplyProps|any) {
   return(
   <div className="d-flex gap-2 my-2 ps-5">
     <img
@@ -19,8 +19,8 @@ export default function Reply({ ImagePath, username, replyTitle, likeNum }:any) 
       <br />
       <span>{replyTitle}</span>
       <div className="d-flex align-items-center gap-1">
-      { likeNum > 0 && <img src="/like.svg" width={20}></img> }
-        { likeNum > 0 && <span className="text-muted">{likeNum} คน</span>}
+      { replylike > 0 && <img src="/like.svg" width={20}></img> }
+        { replylike > 0 && <span className="text-muted">{replylike} คน</span>}
       </div>
     </div>
   </div>);

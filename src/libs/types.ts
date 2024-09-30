@@ -20,6 +20,6 @@ interface PostOwnerComponent {
   content: string;
   profilePic: string;
   PostTitle: string;
-  likes: number;
+  Ownerlikes: number;
 }
 export type { PostOwnerComponent };
