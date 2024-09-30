@@ -1,6 +1,17 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { comments } from "@/libs/comments";
 import PostOwnner from "@/components/PostOwnner";
+import Comment from "@/components/Comment";
+import { ReplyProps } from "../libs/types";
+
+interface CommentComponent {
+  userImagePath: string;
+  username: string;
+  commentText: string;
+  likeNum: number;
+  replies: ReplyProps[];
+}
 
 export default function Home() {
   return (
@@ -21,13 +32,17 @@ export default function Home() {
           likes={100}
         ></PostOwnner>
 
-        {/* Comment Example */}
-        
-
-        {/* Reply Example */}
-        
-
         {/* map-loop render Comment component here */}
+        {comments.map((cmd: CommentComponent) => (
+          <Comment
+            key={cmd.username}
+            ImagePath={cmd.userImagePath}
+            username={cmd.username}
+            commentTitle={cmd.commentText}
+            likes={cmd.likeNum}
+            replies={cmd.replies}
+          />
+        ))}
       </div>
     </div>
   );

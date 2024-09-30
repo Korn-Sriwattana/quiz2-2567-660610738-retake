@@ -1,23 +1,23 @@
 import { CommentComponent } from "./types";
 
-export const comments = [
+export const comments: any = [
   {
     username: "Lisa",
     userImagePath: "/profileImages/lisa.jpg",
     commentText: "จริงค่าาาาา",
-    likeNum: 555,
+    likeNum: 999,
     replies: [
-      {
-        username: "Cat Meme",
-        userImagePath: "/profileImages/popcat.png",
-        replyText: "ลิซ่าาาาาาา Rockstar",
-        likeNum: 20,
-      },
       {
         username: "หมาน้อย",
         userImagePath: "/profileImages/puppy.jpg",
-        replyText: "จริงด้วยค้าบบบบบบบบ",
+        replyText: "จริงค้าบบบ",
         likeNum: 0,
+      },
+      {
+        username: "Cat Meme",
+        userImagePath: "/profileImages/popcat.png",
+        replyText: "ลิซ่าาาาาาา",
+        likeNum: 2,
       },
       ,
     ],
@@ -25,7 +25,7 @@ export const comments = [
   {
     username: "Charlie Brown",
     userImagePath: "/profileImages/charliebrown.jpg",
-    commentText: "บ้าไปแล้ว... หรือเปล่า?",
+    commentText: "ขอตึงกว่านี้หน่อยจาร",
     likeNum: 0,
     replies: [],
   },
