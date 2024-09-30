@@ -4,7 +4,7 @@ interface ReplyProps {
   ImagePath: string;
   username: string;
   replyTitle: string;
-  likes: number;
+  likeNum: number;
 }
 export type { ReplyProps };
 interface CommentComponent {
