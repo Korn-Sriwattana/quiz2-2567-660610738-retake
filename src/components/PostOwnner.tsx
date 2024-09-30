@@ -1,16 +1,11 @@
 "use client";
-interface PostComponent {
-  content:string;
-  profilePic:string;
-  PostTitle:string;
-  likes:number
-}
+import { PostOwnerComponent } from "@/libs/types";
 export default function PostOwnner({
   content,
   profilePic,
   PostTitle,
   likes,
-}:PostComponent) {
+}:PostOwnerComponent) {
   return (
     <div className="vstack gap-3">
       <div className="d-flex align-items-center gap-3">

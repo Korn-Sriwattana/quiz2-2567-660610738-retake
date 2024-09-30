@@ -15,3 +15,11 @@ interface CommentComponent {
   replies: ReplyProps[] | any;
 }
 export type { CommentComponent };
+
+interface PostOwnerComponent {
+  content: string;
+  profilePic: string;
+  PostTitle: string;
+  likes: number;
+}
+export type { PostOwnerComponent };
